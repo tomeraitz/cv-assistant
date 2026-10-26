@@ -38,9 +38,15 @@ git clone https://github.com/tomeraitz/cv-assistant.git ~/.claude/skills/cv-assi
 
 This makes the skill available in every project, but the worker agents (`.claude/agents/`) and the PDF helpers (`lib/`, `assets/fonts/`) are referenced relative to the project root, so you still need to run `claude` from a checkout of this repo (or copy `.claude/agents/`, `lib/` and `assets/` into your project). Project use is simpler.
 
-### 3. Claude Desktop / Cowork
+### 3. Claude Desktop / Cowork (plugin)
 
-Zip the repository (the folder containing `.claude-plugin/plugin.json`), then in Claude Desktop open **Customize → Plugins → Upload plugin** and pick the zip. PDF generation requires Python and `pymupdf` inside the sandbox; this path is untested.
+In Claude Desktop open **Customize → Plugins**, select **Add marketplace**, enter `tomeraitz/cv-assistant`, then install **cv-assistant** from that marketplace. Alternatively zip the repository and use **Upload plugin**. In Claude Code the same plugin installs with:
+
+```
+/plugin install cv-assistant --marketplace tomeraitz/cv-assistant
+```
+
+PDF generation requires Python and `pymupdf` in the environment where Claude runs; in the Cowork sandbox this is untested.
 
 ## Browser setup (optional)
 
