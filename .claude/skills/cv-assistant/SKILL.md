@@ -10,6 +10,7 @@ compatibility: Needs Python 3 + PyMuPDF for PDF generation; browser tools option
 # cv-assistant
 
 One entry point, four phases. All paths are relative to the project root (where `claude` was launched).
+When running as an installed plugin (Claude Desktop / marketplace), the code lives at `${CLAUDE_PLUGIN_ROOT}`: run the helpers as `python "${CLAUDE_PLUGIN_ROOT}/lib/<script>.py"` and tell worker agents that path; `profile/` and `applications/` stay in the user's working folder.
 User data lives only in `profile/` and `applications/` (git-ignored). Never store personal data inside `.claude/`.
 
 ## Step 0 — Profile check

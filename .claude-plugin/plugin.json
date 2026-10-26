@@ -5,5 +5,23 @@
   "author": {
     "name": "Tomer Raitz"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/tomeraitz/cv-assistant",
+  "keywords": [
+    "resume",
+    "cv",
+    "job-search",
+    "ats",
+    "skill"
+  ],
+  "skills": [
+    "./.claude/skills/"
+  ],
+  "agents": [
+    "./.claude/agents/application-tracking-system.md",
+    "./.claude/agents/cv-researcher.md",
+    "./.claude/agents/hiring-manager-reviewer.md",
+    "./.claude/agents/pdf-writer.md",
+    "./.claude/agents/rewrite-resume.md"
+  ]
 }
