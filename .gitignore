@@ -1,0 +1,6 @@
+profile/
+applications/
+__pycache__/
+*.pyc
+_smoke/
+.claude/settings.local.json

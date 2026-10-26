@@ -1,0 +1,20 @@
+{
+  "name": "cv-assistant",
+  "owner": {
+    "name": "tomeraitz",
+    "url": "https://github.com/tomeraitz/cv-assistant"
+  },
+  "metadata": {
+    "description": "Claude Code skill that keeps your master resume up to date and tailors it to job postings."
+  },
+  "plugins": [
+    {
+      "name": "cv-assistant",
+      "source": "./",
+      "description": "Tailor your resume to job postings, keep a master resume up to date, and research roles - a Claude skill with worker subagents (hiring-manager review, rewrite, ATS check, PDF writer, researcher).",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["resume", "cv", "job-search", "ats", "claude-code", "skill"]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "cv-assistant",
+  "version": "0.1.0",
+  "description": "Tailor your resume to job postings, keep a master resume up to date, and research roles — a Claude skill with worker subagents.",
+  "author": {
+    "name": "Tomer Raitz"
+  },
+  "license": "MIT"
+}
