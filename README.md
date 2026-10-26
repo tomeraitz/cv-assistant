@@ -2,6 +2,8 @@
 
 A Claude Code skill that keeps your master resume up to date and tailors it to specific job postings, using a small team of worker subagents.
 
+![cv-assistant demo](assets/demo.gif)
+
 ## What it does
 
 - **Onboard (Phase A)** – builds `profile/` from your career history and your current resume PDF, including a coordinate map of the editable sections.
