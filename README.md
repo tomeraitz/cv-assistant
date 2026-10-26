@@ -40,13 +40,23 @@ This makes the skill available in every project, but the worker agents (`.claude
 
 ### 3. Claude Desktop / Cowork (plugin)
 
-In Claude Desktop open **Customize → Plugins**, select **Add marketplace**, enter `tomeraitz/cv-assistant`, then install **cv-assistant** from that marketplace. Alternatively zip the repository and use **Upload plugin**. In Claude Code the same plugin installs with:
+The repository doubles as a plugin marketplace, so you can install it straight from GitHub:
+
+1. Open Claude Desktop and click **Customize** in the sidebar, then **Plugins**.
+2. Click **+** next to *Personal plugins* and choose **Add marketplace** → **Add from a repository**.
+3. Enter `tomeraitz/cv-assistant` (or the full `https://github.com/tomeraitz/cv-assistant` URL) and confirm.
+4. The **cv-assistant** plugin appears in the list; click **Install**.
+5. Open the installed plugin to check that the skill and its five worker agents are listed. Turn on **Sync automatically** to receive updates.
+
+Fallback: zip the repository (the folder containing `.claude-plugin/plugin.json`) and use **Upload plugin** on the Plugins page.
+
+The same plugin installs in Claude Code with:
 
 ```
 /plugin install cv-assistant --marketplace tomeraitz/cv-assistant
 ```
 
-PDF generation requires Python and `pymupdf` in the environment where Claude runs; in the Cowork sandbox this is untested.
+PDF generation requires Python and `pymupdf` in the environment where Claude runs; in the Cowork sandbox this is untested. Research and match scoring work without it.
 
 ## Browser setup (optional)
 
